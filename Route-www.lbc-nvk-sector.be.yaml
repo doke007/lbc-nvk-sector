@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Route
+metadata:
+  name: lbc-nvk-sector.be
+spec:
+  host: lbc-nvk-sector.be
+  to:
+    kind: Service
+    name: lbc-nvk-sector
