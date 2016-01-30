@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Wie is wie?</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+body {
+	background-image: url();
+	background-repeat: no-repeat;
+	background-color: #55aa33;
+}
+-->
+</style></head>
+
+<body onload="MM_preloadImages('../Docustick/images/Buttons/Start.png','../Docustick/images/Buttons/Actie.png','../Docustick/images/Buttons/Wetgeving.png','../Docustick/images/Buttons/Caos.png','../Docustick/images/Buttons/Fiscaliteit.png','../Docustick/images/Buttons/SurvivalKit.png','../Docustick/images/Buttons/Themas.png','../Docustick/images/Buttons/Herstructurering.png','images/Buttons/Inhoud02.png','images/Buttons/Welkom02.png','images/Buttons/Websites02.png','images/Buttons/Trefwoorden02.png','images/Buttons/Sectoren02.png','images/Buttons/Wieiswie02.png','images/Buttons/Wetgeving02.png','images/Buttons/TipsUpdates02.png','images/Buttons/Huisstijl02.png')">
+<table width="830" border="1" align="center" cellspacing="5" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
+  <tr>
+    <td><table width="800" border="2" align="center" bordercolor="#2AA333">
+        <tr>
+          <td><img src="images/hoofdbanner.jpg" width="790" height="156" alt="Banner" /></td>
+        </tr>
+    </table></td>
+  </tr>
+  
+  <tr>
+    <td><table align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="10"><a href="Welkom.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Welkom','','images/Buttons/Welkom02.png',1)"><img src="images/Buttons/Welkom01.png" alt="Welkom" name="Welkom" width="73" height="30" border="0" id="Welkom" /></a><a href="Welkom.html" target="_top" onclick="MM_nbGroup('down','group1','Start','',1)" onmouseover="MM_nbGroup('over','Start','images/Buttons/Start.png','',1)" onmouseout="MM_nbGroup('out')"></a></td>
+          <td width="10"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','../Docustick/images/Buttons/Wetgeving.png',1)"></a><a href="Inhoud.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Inhoud','','images/Buttons/Inhoud02.png',1)"><img src="images/Buttons/Inhoud01.png" alt="Inhoud" name="Inhoud" width="64" height="30" border="0" id="Inhoud" /></a><a href="../Docustick/Actie.html" target="_top" onclick="MM_nbGroup('down','group1','Actie','',1)" onmouseover="MM_nbGroup('over','Actie','images/Buttons/Actie.png','',1)" onmouseout="MM_nbGroup('out')"></a></td>
+          <td width="10"><a href="Wetgeving.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Wetgeving','','images/Buttons/Wetgeving02.png',1)"><img src="images/Buttons/Wetgeving01.png" alt="Wetgeving" name="Wetgeving" width="83" height="30" border="0" id="Wetgeving" /></a><a href="Wetgeving.html" target="_top" onclick="MM_nbGroup('down','group1','Wetgeving','',1)" onmouseover="MM_nbGroup('over','Wetgeving','images/Buttons/Wetgeving.png','',1)" onmouseout="MM_nbGroup('out')"></a></td>
+          <td width="10"><a href="Websites.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Websites','','images/Buttons/Websites02.png',1)"><img src="images/Buttons/Websites01.png" alt="Websites" name="Websites" width="82" height="30" border="0" id="Websites" /></a><a href="../Docustick/Caos.html" target="_top" onclick="MM_nbGroup('down','group1','Caos','',1)" onmouseover="MM_nbGroup('over','Caos','images/Buttons/Caos.png','',1)" onmouseout="MM_nbGroup('out')"></a></td>
+          <td width="10"><a href="Trefwoorden.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Trefwoorden','','images/Buttons/Trefwoorden02.png',1)"><img src="images/Buttons/Trefwoorden01.png" alt="Trefwoorden" name="Trefwoorden" width="105" height="30" border="0" id="Trefwoorden" /></a><a href="../Docustick/Herstructurering.html" target="_top" onclick="MM_nbGroup('down','group1','Herstructurering','',1)" onmouseover="MM_nbGroup('over','Herstructurering','images/Buttons/Herstructurering.png','',1)" onmouseout="MM_nbGroup('out')"></a></td>
+          <td width="10"><a href="Sectoren.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Sectoren','','images/Buttons/Sectoren02.png',1)"><img src="images/Buttons/Sectoren01.png" alt="Sectoren" name="Sectoren" width="79" height="30" border="0" id="Sectoren" /></a><a href="../Docustick/Fiscaliteit.html" target="_top" onclick="MM_nbGroup('down','group1','Fiscaliteit','',1)" onmouseover="MM_nbGroup('over','Fiscaliteit','images/Buttons/Fiscaliteit.png','',1)" onmouseout="MM_nbGroup('out')"></a></td>
+          <td width="10"><a href="Tips.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Tips','','images/Buttons/TipsUpdates02.png',1)"><img src="images/Buttons/TipsUpdates01.png" alt="Tips" name="Tips" width="116" height="30" border="0" id="Tips" /></a><a href="../Docustick/Themas.html" target="_top" onclick="MM_nbGroup('down','group1','Themas','',1)" onmouseover="MM_nbGroup('over','Themas','images/Buttons/Themas.png','',1)" onmouseout="MM_nbGroup('out')"></a></td>
+          <td width="10"><a href="WieIsWie.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('WieIsWie','','images/Buttons/Wieiswie02.png',1)"><img src="images/Buttons/Wieiswie01.png" alt="WieIsWie" name="WieIsWie" width="96" height="30" border="0" id="WieIsWie" /></a><a href="../Docustick/SurvivalKit.html" target="_top" onclick="MM_nbGroup('down','group1','SurvivalKit','',1)" onmouseover="MM_nbGroup('over','SurvivalKit','images/Buttons/SurvivalKit.png','',1)" onmouseout="MM_nbGroup('out')"></a></td>
+          <td width="10"><a href="Huisstijl.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image41','','images/Buttons/Huisstijl02.png',1)"><img src="images/Buttons/Huisstijl01.png" alt="Huisstijl" name="Image41" width="71" height="33" border="0" id="Image41" /></a></td>
+        </tr>
+    </table>    </td></tr>
+  <tr>
+    <td><table width="800" align="center">
+      <tr>
+        <td><h1>WIE IS WIE?</h1>
+          <hr /></td>
+      </tr>
+      <tr>
+        <td>Hier vind je per regio de LBC-NVK-collega&rsquo;s die verantwoordelijk zijn voor de sectoren van de verzamelsector diensten.</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="#AL">Aalst</a> - <a href="#AW">Antwerpen</a> - <a href="#BG">Brugge</a> -  <a href="#BHV">Brussel</a> - <a href="#Waas">Dendermonde</a> - <a href="#Gent">Gent</a> - <a href="#BHV">Halle</a> - <a href="#HT">Hasselt</a> - <a href="#KIR">Ieper</a> - <a href="#KIR">Kortrijk</a> - <a href="#LV">Leuven</a> - <a href="#MC">Mechelen</a> - <a href="#BG">Oostende</a> - <a href="#Gent">Oudenaarde</a> - <a href="#KIR">Roeselare</a> - <a href="#Waas">Sint-Nklaas</a> - <a href="#TU">Turnhout</a> - <a href="#BHV">Vilvoorde</a></td>
+      </tr>
+      <tr>
+        <td><a href="#AS">Algemeen secretariaat</a></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><h5><a name="AL" id="AL"></a>Aalst</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/AL/DeScheemaekerSven.jpg" width="147" height="196" /></div></td>
+            <td width="474"><p><strong>Sven De Scheemaeker</strong></p>
+              <p>ANPCB Aalst</p>
+              <p>053/73.45.22</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><h5><a name="AW" id="AW"></a>Antwerpen</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td><div align="center"><img src="WieIsWie/AW/Wannes-Gielis.jpg" width="197" height="200" /></div></td>
+            <td><p><strong>Wannes Gielis</strong></p>
+              <p>Internationale handel en vervoer; Automobielinspectie; Filmbedrijf;</p>
+              <p>03/222.70.11</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/AW/SchuermansP.jpg" width="165" height="198" /></div></td>
+            <td><p><strong>Peggy Schuermans</strong></p>
+              <p>ANPCB Diensten (o.a.  Consultancy,  Technisch advies,  Informatica, Telecommunicatie, Schoonmaak,  Callcenters, Reisbureaus, Diamant); Uitzendarbeid; PC 335-336-337;  Eigen sociale organisaties (CM, ACV, ...)</p>
+              <p>03/222.70.21</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/AW/Gert-Sevens.jpg" width="200" height="202" /></div></td>
+            <td><p><strong>Gert Sevens</strong></p>
+              <p>ANPCB Industrie (o.a. Groothandel, Bouw, Drukkerijen, Tabak, Verwerken van mineralen, Garages, Rijscholen); Begrafenisondernemingen </p>
+              <p>03/222.70.09</p></td>
+          </tr>
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/AW/VanReethR.jpg" width="141" height="196" /></div></td>
+            <td width="474"><p><strong>Rik Van Reeth</strong></p>
+              <p>Truvo en uitgeverijen, Internationale handel en vervoer (o.a. IZ SGS)</p>
+              <p>03222.71.18</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><h5><a name="BG" id="BG"></a>Brugge - Oostende</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/BG-OS/Eric-Buylaert.jpg" width="200" height="200" /></div></td>
+            <td width="474"><p><strong>Erik Buylaert</strong></p>
+              <p>ANPCB; Casinobedienden; Internationale handel en vervoer</p>
+              <p>059/55.25.49</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><h5><a name="BHV" id="BHV"></a>Brussel - Halle - Vilvoorde</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/BHV/Pol-Buekenhout.jpg" width="186" height="200" /></div></td>
+            <td width="474"><p><strong>Pol Buekenhout</strong> (Vilvoorde)</p>
+              <p>Luchtvaartmaatschappijen; Logistiek</p>
+              <p>02/557.86.89</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/BHV/Frank-Convents.jpg" width="200" height="202" /></div></td>
+            <td><p><strong>Frank Convents</strong> (Brussel)</p>
+              <p>ANPCB (o.a. Bouw, Schoonmaak, Toerisme)</p>
+              <p>02/557.86.50</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/BHV/Tina-De-Greef.jpg" width="200" height="200" /></div></td>
+            <td><p><strong>Tina De Greef</strong> (Halle)</p>
+              <p>Garages; Automobielinspectie; Rijscholen</p>
+              <p>02/557.86.74</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/BHV/Jan-Dereymaeker.jpg" width="199" height="200" /></div></td>
+            <td><p><strong>Jan Dereymaeker</strong> (Vilvoorde)</p>
+              <p>Transport; Logistiek</p>
+              <p>02/557.86.86</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/BHV/Koen-Dries.jpg" width="187" height="200" /></div></td>
+            <td><p><strong>Koen Dries</strong> (Vilvoorde)</p>
+              <p>IT; Media</p>
+              <p>02/557.86.87</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/BHV/Annick-Druyts.jpg" width="200" height="202" /></div></td>
+            <td><p><strong>Annick Druyts </strong>(Brussel)</p>
+              <p>ANPCB Groothandel</p>
+              <p>02/557.86.58</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/BHV/Hans-Elsen.jpg" width="200" height="200" /></div></td>
+            <td><p><strong>Hans Elsen</strong> (Vilvoorde)</p>
+              <p>IT; Media</p>
+              <p>02/557.86.88</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/BHV/TijsHostyn.jpg" width="160" height="160" /></div></td>
+            <td><p><strong>Tijs Hostyn</strong> (Vilvoorde)</p>
+              <p>IT</p>
+              <p>02/557.86.85</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/BHV/Robert-Veekman.jpg" width="200" height="201" /></div></td>
+            <td><p><strong>Robert Veekman</strong> (Halle)</p>
+              <p>ANPCB; Telecommunicatie; Tabak; Uitzendarbeid; Callcenters; Eigen sociale organisaties (CM, ACV, ...); Colruyt Group Services</p>
+              <p>02/557.86.75</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/BHV/WillekensMarian.jpg" width="120" height="160" /></div></td>
+            <td><p><strong>Marian Willekens </strong> (Brussel)</p>
+              <p>Groothandel (enkel Pharma)</p>
+              <p>02/557.86.82</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><h5><a name="Waas" id="Waas"></a>Dendermonde - Sint-Niklaas</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/DM-SK/WytinckD.jpg" width="141" height="196" /></div></td>
+            <td width="474"><p><strong>David Wytinck</strong></p>
+              <p>ANPCB Dendermonde &amp; Sint-Nklaas; Internationale handel en vervoer (provinciaal)</p>
+              <p>03/765.23.75</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><h5><a name="Gent" id="Gent"></a>Gent-Oudenaarde</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td><div align="center"><img src="WieIsWie/GT-OU/Thomas-Beeckmans.jpg" width="201" height="200" /></div></td>
+            <td><p><strong>Thomas Beeckmans</strong></p>
+              <p>ANPCB Gent;  Internationale handel en vervoer; Pharma groothandel; PC 335-336</p>
+              <p>09/265.43.19</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/GT-OU/DeBockE.jpg" width="141" height="196" /></div></td>
+            <td><p><strong>Eddy De Bock</strong></p>
+              <p>PC 337  (provinciaal)</p>
+              <p>09/265.43.05</p></td>
+          </tr>
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/GT-OU/SchailleeD.jpg" alt="" width="141" height="196" /></div></td>
+            <td width="474"><p><strong>Dirk Schaill&eacute;e</strong></p>
+              <p>ANPCB Oudenaarde</p>
+              <p>09/265.43.16</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><h5><a name="HT" id="HT"></a>Hasselt</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td><div align="center"><img src="WieIsWie/HT/Kareme-Nouri.jpg" width="174" height="200" /></div></td>
+            <td><p><strong>Kareme Nouri</strong></p>
+              <p>ANPCB (Industrie, Handel, Bouw)</p>
+              <p>011/29.09.83</p></td>
+          </tr>
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/HT/Jos-Van-Hout.jpg" width="197" height="200" /></div></td>
+            <td width="474"><p><strong>Jos Van Hout</strong></p>
+              <p>ANPCB (Diensten); Internationale handel en vervoer; Pharma groothandel; Uitzendarbeid; Callcenters; PC 335-336-337</p>
+              <p>011/29.09.66</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><h5><a name="KIR" id="KIR"></a>Kortrijk - Ieper - Roeselare</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/KO-IP-RS/Nancy-Demeulenaere.jpg" width="196" height="200" /></div></td>
+            <td width="474"><p><strong>Nancy Demeulenaere</strong> (Kortrijk - Ieper - Roeselare)</p>
+              <p>ANPCB; Internationale handel en vervoer</p>
+              <p>056/23.55.82</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/KO-IP-RS/Joep-Vanderbeke.jpg" width="200" height="200" /></div></td>
+            <td><p><strong>Joep Vanderbeke</strong> (Kortrijk)</p>
+              <p>ANPCB</p>
+              <p>056/23.55.64</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><h5><a name="LV" id="LV"></a>Leuven</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/LV/John-De-Decker.jpg" width="197" height="200" /></div></td>
+            <td width="474"><p><strong>John De Decker</strong></p>
+              <p>ANPCB; Internationale handel en vervoer;  PC 335</p>
+              <p>016/21.94.33</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><h5><a name="MC" id="MC"></a>Mechelen</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td><div align="center"><img src="WieIsWie/MC/Lieveke-Norga.jpg" width="199" height="200" /></div></td>
+            <td><p><strong>Lieveke Norga</strong></p>
+              <p>Internationale handel en vervoer</p>
+              <p>015/71.85.05</p></td>
+          </tr>
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/MC/Magali-Verhaegen.jpg" width="198" height="200" /></div></td>
+            <td width="474"><p><strong>Magali Verhaegen</strong></p>
+              <p>ANPCB; Pharma groothandel</p>
+              <p>015/71.85.07</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><h5><a name="TU" id="TU"></a>Turnhout</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/TU/Joeri-Saenen.jpg" width="200" height="195" /></div></td>
+            <td width="474"><p><strong>Joeri Saenen</strong></p>
+              <p>ANPCB; Internationale handel en vervoer</p>
+              <p>014/44.61.64</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><h5><a name="AS" id="AS"></a>Algemeen Secretariaat</h5></td>
+      </tr>
+      <tr>
+        <td><table width="700" border="1" align="center">
+          <tr>
+            <td><div align="center"><img src="WieIsWie/AS/Annemie-Plessers.jpg" width="200" height="200" /></div></td>
+            <td><p><strong>Annemie Plessers</strong></p>
+              <p>Vormingsdeskundige</p>
+              <p>03/220.87.91</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/AS/VandammeJeroen.jpg" width="147" height="196" /></div></td>
+            <td><p><strong>Jeroen Vandamme</strong></p>
+              <p>Nationaal Secretaris Diensten</p>
+              <p>03/220.87.17</p></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="WieIsWie/AS/Nadia-Van-De-Voorde.jpg" width="200" height="204" /></div></td>
+            <td><p><strong>Nadia Van de Voorde</strong></p>
+              <p>Medewerkster Nationaal Secretaris Diensten</p>
+              <p>03/220.87.16</p></td>
+          </tr>
+          <tr>
+            <td width="210"><div align="center"><img src="WieIsWie/AS/Sandra-Vercammen.jpg" width="197" height="200" /></div></td>
+            <td width="474"><p><strong>Sandra Vercammen</strong></p>
+              <p>Nationaal Secretaris Kaderpersoneel</p>
+              <p>03/220.87.27</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><div align="center"><img src="images/Beeldbanner.jpg" width="720" height="101" alt="Banner ACV" /></div></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<p class="oranjebold">&nbsp;</p>
+</body>
+</html>

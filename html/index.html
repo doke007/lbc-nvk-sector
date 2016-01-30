@@ -1,1 +1,202 @@
-Hello, World!
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>LBC-NVK Sector Startpagina</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+/* ~~ Element-/tagkiezers ~~ */
+ul, ol, dl { /* Vanwege de verschillen tussen browsers kunt u het beste geen opvulling en marges gebruiken voor lijsten. Voor consistentie kunt u hier of bij de items (LI, DT, DD) voor de lijsten de gewenste waarden opgeven. Houd er rekening mee dat wat u hier doet, wordt gebruikt in de navigatielijst, tenzij u een specifiekere kiezer opgeeft. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* als u de bovenmarge verwijdert, voorkomt u dat marges buiten de div vallen waartoe ze behoren. De resterende ondermarge zorgt ervoor dat er ruimte blijft tussen de div en alle volgende elementen. */
+	padding-right: 15px;
+	padding-left: 15px; /* als u opvulling toevoegt aan de zijkant van de elementen in de divs, in plaats van aan de divs zelf, voorkomt u dat u kadermodelberekeningen moet uitvoeren. U kunt als alternatief een geneste div met opvulling aan de zijkant gebruiken. */
+}
+a img { /* met deze kiezer verwijdert u de blauwe standaardrand die in bepaalde browsers wordt weergeven rond een afbeelding als deze wordt omgeven door een koppeling */
+	border: none;
+}
+/* ~~ De stijl voor de koppelingen op uw site moet deze volgorde aanhouden, inclusief de groep kiezers waarmee het aanwijseffect wordt gemaakt. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* tenzij u zeer unieke opmaak toepast op uw koppelingen, kunt u de koppelingen het beste onderstrepen zodat ze gemakkelijk te herkennen zijn */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* met deze groep kiezers krijgen gebruikers die navigeren met een toetsenbord, dezelfde aanwijsfunctionaliteit als gebruikers die werken met een muis. */
+	text-decoration: none;
+}
+/* ~~ deze container met vaste breedte omvat alle overige elementen ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto; /* de lay-out wordt gecentreerd via de combinatie van de automatische waarde voor de zijkanten en de breedte */
+}
+/* ~~ Dit is de informatie over de lay-out. ~~ 
+1) Opvulling wordt alleen boven en/of onder aan de div geplaatst. De elementen binnen deze div hebben opvulling aan de zijkanten. Hierdoor hoeft u geen kadermodelberekeningen uit te voeren. Houd er rekening mee dat als u opvulling aan de zijkant of een rand aan de div toevoegt, deze opvulling wordt toegevoegd aan de waarde die u definieert voor de totale breedte. U kunt ook de opvulling voor een element in de div verwijderen en in de div een tweede div invoegen die geen breedte heeft, maar wel de benodigde opvulling voor uw ontwerp bevat.
+*/
+.content {
+	padding: 10px 0;
+}
+/* ~ diverse klassen voor zweven/wissen ~~ */
+.fltrt {  /* met deze klasse kunt u een element aan de rechterkant van uw pagina laten zweven. Het zwevende element moet voorafgaan aan het element waarnaast het op de pagina staat. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* met deze klasse kunt u een element aan de linkerkant van uw pagina laten zweven. Het zwevende element moet voorafgaan aan het element waarnaast het op de pagina staat. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* deze klasse kunt u voor een <br /> of een lege div gebruiken als het laatste element dat volgt op de laatste zwevende div (binnen de container) wanneer overflow:hidden is verwijderd uit de container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+-->
+</style>
+<script src="Spry-UI-1.7/includes/SpryDOMUtils.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/SpryDOMEffects.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/SpryWidget.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/SpryPanelSelector.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/SpryPanelSet.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/SpryFadingPanels.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/SprySliderPanels.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/SpryFilmStrip.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/SpryImageLoader.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/SpryImageSlideShow.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/plugins/ImageSlideShow/SpryThumbnailFilmStripPlugin.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/plugins/ImageSlideShow/SpryTitleSliderPlugin.js" type="text/javascript"></script>
+<script src="Spry-UI-1.7/includes/plugins/ImageSlideShow/SpryPanAndZoomPlugin.js" type="text/javascript"></script>
+<link href="Spry-UI-1.7/css/ImageSlideShow/basicFS/basic_fs.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+/* BeginOAWidget_Instance_2141543: #ImageSlideShow */
+#ImageSlideShow {
+	width: 550px;
+	margin: 24px 0px 0px 0px;
+	border: solid 1px #AAAAAA;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+}
+#ImageSlideShow .ISSName {
+	top: -24px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #AAAAAA;
+}
+#ImageSlideShow .ISSSlideTitle {
+	top: -18px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	overflow: hidden;
+	color: #AAAAAA;
+	text-transform: none;
+}
+#ImageSlideShow .ISSClip {
+	height: 700px;
+	margin: 0 10px 10px 10px;
+	border: solid 1px #AAAAAA;
+	background-color: #000000;
+}
+#ImageSlideShow .ISSControls {
+	top: 11px;
+	height: 432px;
+}
+#ImageSlideShow .FilmStrip {
+	height: 80px;
+	background-color: #CCCCCC;
+}
+#ImageSlideShow .FilmStripPreviousButton, #ImageSlideShow .FilmStripNextButton {
+	width: 25px;
+	height: 80px;
+}
+#ImageSlideShow .FilmStripTrack {
+	height: 80px;
+}
+#ImageSlideShow .FilmStripContainer {
+	height: 80px;
+}
+#ImageSlideShow .FilmStripPanel {
+	height: 80px;
+	padding-left: 10px;
+	margin-right: 0px;
+}
+#ImageSlideShow .FilmStripPanel .ISSSlideLink {
+	margin-top: 10px;
+	border: solid 1px #AAAAAA;
+	background-color: #FFFFFF;
+}
+#ImageSlideShow .FilmStripPanel .ISSSlideLinkRight {
+	border: solid 1px #AAAAAA;
+	width: 56px;
+	height: 47px;
+	margin: 4px 4px 4px 4px;
+}
+#ImageSlideShow .FilmStripCurrentPanel .ISSSlideLink {
+	background-color: #FFFFFF;
+	border-color: #FF0000;
+}
+#ImageSlideShow .FilmStripCurrentPanel .ISSSlideLinkRight {
+	border-color: #AAAAAA;
+}
+    
+/* EndOAWidget_Instance_2141543 */
+</style>
+<script type="text/xml">
+<!--
+<oa:widgets>
+  <oa:widget wid="2141543" binding="#ImageSlideShow" />
+</oa:widgets>
+-->
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <h1>LBC-NVK-Sector</h1>
+    <p>Welkom op deze startpagina. Maak je keuze om verder te gaan.</p>
+    <h2><a href="Diensten/DocustickDiensten/Welkom.html" target="_blank">Docustick Diensten</a></h2>
+    <p>&nbsp;</p>
+    <div align="center">
+      <ul id="ImageSlideShow" title="Werknemers verdienen beter 2013">
+        <li><a href="Campagne/Gewoon/Lastenverlaging.jpg" title="Lastenverlaging - Tewerkstelling"><img src="Campagne/Klein/Lastenverlaging.jpg" alt="Lastenverlaging" /></a></li>
+        <li><a href="Campagne/Gewoon/Loonstop.jpg" title="Loonstop - Winsten"><img src="Campagne/Klein/Loonstop.jpg" alt="Loonstop" /></a></li>
+        <li><a href="Campagne/Gewoon/VermogensMeerbetalen.jpg" title="Vermogens - Betalen"><img src="Campagne/Klein/VermogensMeerbetalen.jpg" alt="VermogensMeerbetalen" /></a>
+          <script type="text/javascript">
+// BeginOAWidget_Instance_2141543: #ImageSlideShow
+var ImageSlideShow = new Spry.Widget.ImageSlideShow("#ImageSlideShow", {
+	widgetID: "ImageSlideShow",
+	widgetClass: "BasicSlideShowFS",
+	injectionType: "replace",
+	autoPlay: true,
+	displayInterval: 10000,
+	transitionDuration: 2000,
+	componentOrder: ["name", "title", "view", "controls", "links"],
+	sliceMap: { BasicSlideShowFS: "3slice", ISSSlideLink: "3slice" },
+	plugIns: [ Spry.Widget.ImageSlideShow.ThumbnailFilmStripPlugin, Spry.Widget.ImageSlideShow.TitleSliderPlugin, Spry.Widget.ImageSlideShow.PanAndZoomPlugin ],
+	TFSP: { pageIncrement: 8, wraparound: true }
+});
+// EndOAWidget_Instance_2141543
+          </script>
+        </li>
+      </ul>
+    </div>
+    <p>&nbsp;</p>
+    <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+</html>
