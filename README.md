@@ -1,6 +1,6 @@
 # lbc-nvk-sector
 
-### Installation
+### Installation instructions
 
 You need oc (https://github.com/openshift/origin/releases) localy installed:
 
