@@ -44,7 +44,7 @@ cat ~/.ssh/lbc-nvk-sector.pub
 Deploy from private git repository
 
 ```sh
-oc new-app git@github.com:doke007/lbc-nvk-sector.be.git
+oc new-app https://github.com/doke007/lbc-nvk-sector.be.git
 ```
 
 #### route.yml
