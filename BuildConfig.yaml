@@ -18,7 +18,7 @@ items:
     source:
       git:
         ref: master
-        uri: https://github.com/doke007/lbc-nvk-sector.be.git
+        uri: git@github.com:doke007/lbc-nvk-sector.git
       sourceSecret:
         name: lbc-nvk-sector
       type: Git
