@@ -1,0 +1,44 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: BuildConfig
+  metadata:
+    annotations:
+      openshift.io/generated-by: OpenShiftNewApp
+    creationTimestamp: null
+    labels:
+      app: lbc-nvk-sector
+    name: lbc-nvk-sector
+  spec:
+    output:
+      to:
+        kind: ImageStreamTag
+        name: lbc-nvk-sector:latest
+    resources: {}
+    source:
+      git:
+        ref: master
+        uri: git@github.com:doke007/lbc-nvk-sector.be.git
+      sourceSecret:
+        name: lbc-nvk-sector
+      type: Git
+    strategy:
+      dockerStrategy:
+        from:
+          kind: ImageStreamTag
+          name: centos:7
+      type: Docker
+    triggers:
+    - github:
+        secret: a75881c493ce41179c99a5534fd97f4f
+      type: GitHub
+    - generic:
+        secret: a75881c493ce41179c99a5534fd97f4f
+      type: Generic
+    - type: ConfigChange
+    - imageChange: {}
+      type: ImageChange
+  status:
+    lastVersion: 0
+kind: List
+metadata: {}
